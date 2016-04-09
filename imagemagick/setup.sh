@@ -10,8 +10,3 @@ rm ImageMagick-6.8.9-10.tar.xz
 # Compile ImageMagick with the afl compiler
 cd ImageMagick-6.8.9-10/
 ./configure CC="afl-gcc" CXX="afl-g++" --disable-shared; make
-
-# Create folders for input and output files
-cd ..
-mkdir input/
-mkdir output/
